@@ -1,0 +1,111 @@
+{
+  "id": "tour_dates",
+  "type": "SharedSlice",
+  "name": "TourDates",
+  "description": "TourDates",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TourDates",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "tourDatesTitleColor": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Color"
+        },
+        "tourDatesBackground": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "tourDatesBackground",
+            "placeholder": ""
+          }
+        },
+        "tourDatesItemBackground": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "tourDatesItemBackground",
+            "placeholder": ""
+          }
+        },
+        "tourDatesItemTextColor": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Color"
+        },
+        "tourDatesCTABackground": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Color"
+        },
+        "tourDatesCTATextColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "tourDatesCTATextColor",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "date": {
+          "type": "Date",
+          "config": {
+            "label": "",
+            "id": "date",
+            "placeholder": ""
+          }
+        },
+        "time": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "time",
+            "placeholder": ""
+          }
+        },
+        "location": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "location",
+            "placeholder": ""
+          }
+        },
+        "tickets": {
+          "config": {
+            "label": "",
+            "placeholder": "Buy Now"
+          },
+          "type": "Text"
+        },
+        "ticketsLink": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        }
+      }
+    }
+  ]
+}

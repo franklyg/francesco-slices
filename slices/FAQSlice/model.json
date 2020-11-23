@@ -1,0 +1,86 @@
+{
+  "id": "f_a_q_slice",
+  "type": "SharedSlice",
+  "name": "FAQSlice",
+  "description": "FAQSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "FAQSlice",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Description",
+            "placeholder": "A nice description of your feature"
+          }
+        },
+        "faqTitleBackground": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "faqTitleBackground",
+            "placeholder": ""
+          }
+        },
+        "faqTitleTextColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "faqTitleTextColor",
+            "placeholder": ""
+          }
+        },
+        "faqCopyBackground": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "faqCopyBackground",
+            "placeholder": ""
+          }
+        },
+        "faqCopyTextColor": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Color"
+        }
+      },
+      "items": {
+        "faqTitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "",
+            "id": "faqTitle",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,rtl"
+          }
+        },
+        "faqCopy": {
+          "type": "StructuredText",
+          "config": {
+            "label": "",
+            "id": "faqCopy",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,rtl"
+          }
+        }
+      }
+    }
+  ]
+}

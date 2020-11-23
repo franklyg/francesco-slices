@@ -1,0 +1,101 @@
+{
+  "id": "c_t_a_banner",
+  "type": "SharedSlice",
+  "name": "CTABanner",
+  "description": "CTABanner",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CTABanner",
+      "primary": {
+        "bannerHeader": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "bannerHeader",
+            "placeholder": ""
+          }
+        },
+        "bannerHeaderColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "bannerHeaderColor",
+            "placeholder": ""
+          }
+        },
+        "bannerSubText": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "bannerSubText",
+            "placeholder": ""
+          }
+        },
+        "bannerSubTextColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "bannerSubTextColor",
+            "placeholder": ""
+          }
+        },
+        "bannerBackgroundColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "bannerBackgroundColor",
+            "placeholder": ""
+          }
+        },
+        "bannerButtonLink": {
+          "type": "Link",
+          "config": {
+            "label": "",
+            "id": "bannerButtonLink",
+            "placeholder": "",
+            "allowTargetBlank": true
+          }
+        },
+        "bannerButtonColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "bannerButtonColor",
+            "placeholder": ""
+          }
+        },
+        "bannerButtonLinkCopy": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "bannerButtonLinkCopy",
+            "placeholder": ""
+          }
+        },
+        "bannerButtonCopyColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "bannerButtonCopyColor",
+            "placeholder": ""
+          }
+        },
+        "showCTABannerButton": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
+          },
+          "type": "Boolean"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

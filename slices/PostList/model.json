@@ -1,0 +1,73 @@
+{
+  "id": "post_list",
+  "type": "SharedSlice",
+  "name": "PostList",
+  "description": "PostList",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "PostList",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Description",
+            "placeholder": "A nice description of your feature"
+          }
+        }
+      },
+      "items": {
+        "postImage": {
+          "type": "Image",
+          "config": {
+            "id": "postImage",
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "postTitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "",
+            "id": "postTitle",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,rtl"
+          }
+        },
+        "postCopy": {
+          "type": "StructuredText",
+          "config": {
+            "label": "",
+            "id": "postCopy",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,rtl"
+          }
+        },
+        "postLink": {
+          "type": "Link",
+          "config": {
+            "label": "",
+            "id": "postLink",
+            "placeholder": "",
+            "allowTargetBlank": true
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "text_image",
+  "type": "SharedSlice",
+  "name": "TextImage",
+  "description": "TextImage",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextImage",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "id": "image",
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Description",
+            "placeholder": "A nice description of your feature"
+          }
+        },
+        "copyBackground": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Color"
+        },
+        "copyTextColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "copyTextColor",
+            "placeholder": ""
+          }
+        },
+        "buttonLink": {
+          "type": "Link",
+          "config": {
+            "label": "",
+            "id": "buttonLink",
+            "placeholder": "",
+            "allowTargetBlank": true
+          }
+        },
+        "buttonText": {
+          "type": "StructuredText",
+          "config": {
+            "label": "",
+            "id": "buttonText",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,rtl"
+          }
+        },
+        "buttonBackground": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "buttonBackground",
+            "placeholder": ""
+          }
+        },
+        "buttonTextColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "buttonTextColor",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

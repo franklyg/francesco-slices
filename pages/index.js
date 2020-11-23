@@ -1,6 +1,7 @@
 import { Client } from "../prismicKits";
 import SliceZone from "next-slicezone";
 import { useGetStaticProps, useGetStaticPaths } from "next-slicezone/hooks";
+import "../styles/globals.css";
 
 import resolver from "../sm-resolver.js";
 

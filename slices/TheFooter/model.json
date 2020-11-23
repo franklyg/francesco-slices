@@ -1,0 +1,60 @@
+{
+  "id": "the_footer",
+  "type": "SharedSlice",
+  "name": "TheFooter",
+  "description": "TheFooter",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TheFooter",
+      "primary": {
+        "brandName": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "brandName",
+            "placeholder": ""
+          }
+        },
+        "footerBackground": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "footerBackground",
+            "placeholder": ""
+          }
+        },
+        "footerTextColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "footerTextColor",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "footerLink": {
+          "type": "Link",
+          "config": {
+            "label": "",
+            "id": "footerLink",
+            "placeholder": "",
+            "allowTargetBlank": true
+          }
+        },
+        "footerLinkCopy": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "footerLinkCopy",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

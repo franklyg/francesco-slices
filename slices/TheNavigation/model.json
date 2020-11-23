@@ -1,0 +1,73 @@
+{
+  "id": "the_navigation",
+  "type": "SharedSlice",
+  "name": "TheNavigation",
+  "description": "TheNavigation",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TheNavigation",
+      "primary": {
+        "navigationDirection": {
+          "config": {
+            "label": "Navigation Animation Direction",
+            "placeholder": "",
+            "default_value": "left",
+            "options": [
+              "left",
+              "top",
+              "right",
+              "bottom"
+            ]
+          },
+          "type": "Select"
+        },
+        "navigationBackgroundColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "navigationBackgroundColor",
+            "placeholder": ""
+          }
+        },
+        "navigationTextColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "navigationTextColor",
+            "placeholder": ""
+          }
+        },
+        "menuIconColor": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Color"
+        }
+      },
+      "items": {
+        "navigationLinkCopy": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "navigationLinkCopy",
+            "placeholder": ""
+          }
+        },
+        "navigationLink": {
+          "type": "Link",
+          "config": {
+            "label": "",
+            "id": "navigationLink",
+            "placeholder": "",
+            "allowTargetBlank": true
+          }
+        }
+      }
+    }
+  ]
+}
