@@ -1,1 +1,42 @@
-[{"id":"default-slice","name":"Default slice","docURL":"...","version":"sktwi1xtmkfgx8626","description":"TourDates","primary":{"title":[{"type":"heading1","text":"Integrate bricks-and-clicks e-business","spans":[]}],"tourDatesTitleColor":"#b2a495","tourDatesBackground":"#bb7e4b","tourDatesItemBackground":"#fdb65c","tourDatesItemTextColor":"#e87a0e","tourDatesCTABackground":"#8da9fc","tourDatesCTATextColor":"#1c324e"},"items":[{"date":"2013-10-02","time":"A text of type \"\" that conveys ","location":"A text of type \"\" that conveys ","tickets":"A text of type \"\" that conveys Buy Now","ticketsLink":{"label":"","placeholder":"","allowTargetBlank":true}},{"date":"2017-10-06","time":"A text of type \"\" that conveys ","location":"A text of type \"\" that conveys ","tickets":"A text of type \"\" that conveys Buy Now","ticketsLink":{"label":"","placeholder":"","allowTargetBlank":true}}],"slice_type":"tour_dates"}]
+[{
+  "id": "default-slice",
+  "name": "Default slice",
+  "docURL": "...",
+  "version": "sktwi1xtmkfgx8626",
+  "description": "TourDates",
+  "primary": {
+    "title": [{
+      "type": "heading1",
+      "text": "The Creed Reunion Tour",
+      "spans": []
+    }],
+    "tourDatesTitleColor": "#fff",
+    "tourDatesBackground": "#242424",
+    "tourDatesItemBackground": "#ccc",
+    "tourDatesItemTextColor": "#242424",
+    "tourDatesCTABackground": "#000",
+    "tourDatesCTATextColor": "#fff"
+  },
+  "items": [{
+    "date": "2013-10-02",
+    "time": "7:30PM",
+    "location": "Molson Ampitheatre - Toronto, ON",
+    "tickets": "Buy Now",
+    "ticketsLink": {
+      "label": "",
+      "placeholder": "",
+      "allowTargetBlank": true
+    }
+  }, {
+    "date": "2017-10-06",
+    "time": "8:40PM",
+    "location": "Madison Square Garden - New York, NY",
+    "tickets": "Buy Now",
+    "ticketsLink": {
+      "label": "",
+      "placeholder": "",
+      "allowTargetBlank": true
+    }
+  }],
+  "slice_type": "tour_dates"
+}]

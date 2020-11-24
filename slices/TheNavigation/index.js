@@ -10,20 +10,17 @@ const Navigation = styled.nav`
   transition: .5s all;
   z-index: 100;
   display: flex;
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-  font-family: 'Poppins', Arial; 
-
-  // Animation Direction
+  background: ${props => props.navigationBackgroundColor };
+  
   ${ props => {
-    if(props.direction === 'top'){
+    if(props.direction){
       return `
-        top: -100vh;
-        &.active{
-          top: 0;
-        }
+      left: -100vw;
+      &.active{
+        left: 0;
+      }
       `
-    }
-    if(props.direction === 'right'){
+    }else{
       return `
       right: -100vw;
       &.active{
@@ -31,117 +28,96 @@ const Navigation = styled.nav`
       }
       `
     }
-    if(props.direction === 'bottom'){
-      return `
-      bottom: -100vh;
-      &.active{
-        bottom: 0;
-      }
+  }}
+
+  ${props => {
+    if(props.verticalLinkListPosition){
+      return`
+        align-items: flex-start;
       `
-    }
-    if(props.direction === 'left'){
-      return `
-      left: -100vw;
-      &.active{
-        left: 0;
-      }
+    }else{
+      return`
+        align-items: flex-end;
       `
     }
   }}
-
-  // Link Position
+  
   ${props => {
-    if(props.linkListPosition === 'top'){
+    if(props.horizontalLinkListPosition){
       return`
-        align-items: flex-start;
-      `;
-    }
-    if(props.linkListPosition === 'center'){
+        text-align: left;
+      `
+    }else{
       return`
-        align-items: center;
-      `;
-    }
-    if(props.linkListPosition === 'bottom'){
-      return`
-        align-items: flex-end;
-      `;
+        text-align: right;
+      `
     }
   }}
 
 `;
-
 const HamburgerButton = styled.div`
   position: fixed;
   top: 1rem;
   width: 1.75rem;
   z-index: 101;
   span{
+    background: ${props => props.menuIconColor};
     width: 100%;
-    height: .25rem;
-    margin: .25rem;
+    height: .2rem;
+    margin: .3rem;
     display: block;
   }
   ${ props => {
-    if(props.menuIconPosition === 'left'){
+    if(props.menuIconPosition){
       return`
         left: 1rem;
-      `;
-    }
-    if(props.menuIconPosition === 'center'){
-      return`
-        left: 0;
-        right: 0;
-        display: block;
-        margin: 0;
-      `;
-    }
-    if(props.menuIconPosition === 'right'){
+      `
+    }else{
       return`
         right: 1rem;
-      `;
+      `
     }
   }}
-`;
 
+`;
 const LinkList = styled.ul`
   display: flex;
   flex-flow: column wrap;
+  width: 100%;
+  padding: 0 2rem;
 `;
-
 const LinkListItem = styled.li`
-  height: 4rem;
+  height: 3rem;
   overflow: hidden;
-  font-size: 4rem;
-  margin: 2rem 0;
+  font-size: 3rem;
+  margin: 1rem 0;
   line-height: .8;
 `;
-
 const LinkListItemLink = styled.a`
   text-decoration: none;
   transition: .5s all;
   transition-delay: .5s;
   display: block;
+  color: ${props =>  props.navigationTextColor}
 `;
 
-
-
-const MySlice = ({ slice }) => {
+const TheNavigation = ({ slice }) => {
   
-  const [navToggle, navToggleState] = useState(false)
+  const [navToggle, navToggleState] = useState(false);
 
   return (
     <>
       <GlobalStyle />
-      <HamburgerButton onClick={ () => navToggleState(!navToggle)} className={ navToggle ? 'active' : null }>
-        <span style={{ background: slice.primary.menuIconColor }}></span>
-        <span style={{ background: slice.primary.menuIconColor }}></span>
-        <span style={{ background: slice.primary.menuIconColor }}></span>
+      <HamburgerButton onClick={ () => navToggleState(!navToggle)} className={ navToggle ? 'active' : null } menuIconPosition={ slice.primary.menuIconPosition } menuIconColor={ slice.primary.menuIconColor }>
+        <span></span>
+        <span></span>
+        <span></span>
       </HamburgerButton>
-      <Navigation direction={ slice.primary.navigationDirection } className={ navToggle ? 'active' : null } style={{ background: slice.primary.navigationBackgroundColor }}>
+      <Navigation direction={ slice.primary.navigationDirection } className={ navToggle ? 'active' : null } navigationBackgroundColor={ slice.primary.navigationBackgroundColor } verticalLinkListPosition={ slice.primary.verticalLinksPosition } horizontalLinkListPosition={ slice.primary.horizontalLinksPosition }>
         <LinkList>
           {slice.items.map((link, i) => 
             <LinkListItem key={i}>
-              <LinkListItemLink href={link.navigationLink} style={{ color: slice.primary.navigationTextColor, transform: `${navToggle ? `translateY(0)` : `translateY(100%)` }` }}>{ link.navigationLinkCopy }</LinkListItemLink>
+              <LinkListItemLink href={link.navigationLink.url} navigationTextColor={ slice.primary.navigationTextColor } style={{ transform: `${navToggle ? `translateY(0)` : `translateY(5rem)` }` }}>{ link.navigationLinkCopy }</LinkListItemLink>
             </LinkListItem>
           )}
         </LinkList>
@@ -151,7 +127,7 @@ const MySlice = ({ slice }) => {
 
 } 
 
-MySlice.propTypes = {
+TheNavigation.propTypes = {
   slice: shape({
     primary: shape({
       title: array.isRequired,
@@ -159,4 +135,4 @@ MySlice.propTypes = {
   }).isRequired,
 };
 
-export default MySlice;
+export default TheNavigation;

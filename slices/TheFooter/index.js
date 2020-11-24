@@ -30,7 +30,9 @@ const FooterLinkList = styled.ul`
   display: flex;
   flex-flow: column wrap;
   margin: 1rem 0;
+  align-items: center;
   @media(min-width: 1024px){
+    margin: 0;
     flex: 1;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -39,6 +41,9 @@ const FooterLinkList = styled.ul`
 const FooterLinkListItem = styled.li`
   margin: 0 0 1rem 0;
   &:last-child{
+    margin: 0;
+  }
+  @media(min-width: 1024px){
     margin: 0;
   }
 `

@@ -26,6 +26,30 @@
             "label": "Description",
             "placeholder": "A nice description of your feature"
           }
+        },
+        "postListBackground": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "postListBackground",
+            "placeholder": ""
+          }
+        },
+        "postListHeaderTextColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "postListHeaderTextColor",
+            "placeholder": ""
+          }
+        },
+        "postListSubHeaderTextColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "postListSubHeaderTextColor",
+            "placeholder": ""
+          }
         }
       },
       "items": {

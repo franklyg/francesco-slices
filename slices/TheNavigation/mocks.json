@@ -1,1 +1,45 @@
-[{"id":"default-slice","name":"Default slice","docURL":"...","version":"sktwi1xtmkfgx8626","description":"TheNavigation","primary":{"navigationDirection":"left","navigationBackgroundColor":"#4a7feb","navigationTextColor":"#ffffff","menuIconColor":"#3a4832"},"items":[{"navigationLinkCopy":"A text of type \"\" that conveys ","navigationLink":{"link_type":"Web","url":"https://slicemachine.dev"}},{"navigationLinkCopy":"A text of type \"\" that conveys ","navigationLink":{"link_type":"Web","url":"https://slicemachine.dev"}},{"navigationLinkCopy":"A text of type \"\" that conveys ","navigationLink":{"link_type":"Web","url":"https://slicemachine.dev"}}],"slice_type":"the_navigation"}]
+[{
+  "id": "default-slice",
+  "name": "Default slice",
+  "docURL": "...",
+  "version": "sktwi1xtmkfgx8626",
+  "description": "TheNavigation",
+  "primary": {
+    "navigationDirection": false,
+    "menuIconPosition": true,
+    "horizontalLinksPosition": false,
+    "verticalLinksPosition": false,
+    "menuIconColor": "#a29df1",
+    "navigationBackgroundColor": "#8cdfa0",
+    "navigationTextColor": "#fff"
+  },
+  "items": [{
+    "navigationLinkCopy": "Home",
+    "navigationLink": {
+      "label": "",
+      "id": "navigationLink",
+      "placeholder": "",
+      "allowTargetBlank": true
+    },
+    "navigationTextColor": "#f643a0"
+  }, {
+    "navigationLinkCopy": "About",
+    "navigationLink": {
+      "label": "",
+      "id": "navigationLink",
+      "placeholder": "",
+      "allowTargetBlank": true
+    },
+    "navigationTextColor": "#e0c85a"
+  }, {
+    "navigationLinkCopy": "Merch",
+    "navigationLink": {
+      "label": "",
+      "id": "navigationLink",
+      "placeholder": "",
+      "allowTargetBlank": true
+    },
+    "navigationTextColor": "#399a21"
+  }],
+  "slice_type": "the_navigation"
+}]

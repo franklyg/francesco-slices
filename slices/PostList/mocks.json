@@ -1,1 +1,102 @@
-[{"id":"default-slice","name":"Default slice","docURL":"...","version":"sktwi1xtmkfgx8626","description":"PostList","primary":{"title":[{"type":"heading1","text":"aggregate open-source niches","spans":[]}],"description":[{"type":"paragraph","text":"embrace back-end vortals","spans":[]}]},"items":[{"postImage":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.prismic.io/important-sm-images/b392a962-5824-424f-9d87-162541436f98_h0xKqdDPLaE.jpg?w=900&h=500"},"postTitle":[{"type":"heading1","text":"monetize back-end schemas","spans":[]}],"postCopy":[{"type":"heading1","text":"e-enable real-time synergies","spans":[]}],"postLink":{"link_type":"Web","url":"https://slicemachine.dev"}},{"postImage":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.prismic.io/important-sm-images/e9af888c-3575-4a25-93c3-e70b7e6618fe_HN0tPzaZJNA.jpg?w=900&h=500"},"postTitle":[{"type":"heading1","text":"incentivize ubiquitous communities","spans":[]}],"postCopy":[{"type":"heading1","text":"extend mission-critical initiatives","spans":[]}],"postLink":{"link_type":"Web","url":"https://slicemachine.dev"}},{"postImage":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.prismic.io/important-sm-images/a088b747-ac0d-4ed4-9407-b9555a3de82e_o9Y-bfgbtjg.jpg?w=900&h=500"},"postTitle":[{"type":"heading1","text":"exploit global initiatives","spans":[]}],"postCopy":[{"type":"heading1","text":"transform mission-critical eyeballs","spans":[]}],"postLink":{"link_type":"Web","url":"https://slicemachine.dev"}},{"postImage":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.prismic.io/important-sm-images/5d998b82-32ee-4a44-b31e-07414eb2b96f_PI7FJJjGtt4.jpg?w=900&h=500"},"postTitle":[{"type":"heading1","text":"facilitate end-to-end mindshare","spans":[]}],"postCopy":[{"type":"heading1","text":"utilize user-centric infomediaries","spans":[]}],"postLink":{"link_type":"Web","url":"https://slicemachine.dev"}}],"slice_type":"post_list"}]
+[{
+  "id": "default-slice",
+  "name": "Default slice",
+  "docURL": "...",
+  "version": "sktwi1xtmkfgx8626",
+  "description": "PostList",
+  "primary": {
+    "title": [{
+      "type": "heading1",
+      "text": "Posts n Stuff",
+      "spans": []
+    }],
+    "description": [{
+      "type": "paragraph",
+      "text": "These are the posts you've been looking for",
+      "spans": []
+    }],
+    "postListBackground": "#fff",
+    "postListHeaderTextColor": "#000",
+    "postListSubHeaderTextColor": "#000"
+  },
+  "items": [{
+    "postImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/White-tailed_deer.jpg/1011px-White-tailed_deer.jpg"
+    },
+    "postTitle": [{
+      "type": "heading1",
+      "text": "Look, you found this post",
+      "spans": []
+    }],
+    "postCopy": [{
+      "type": "heading1",
+      "text": "Check it out",
+      "spans": []
+    }],
+    "postLink": {
+      "label": "",
+      "id": "postLink",
+      "placeholder": "",
+      "allowTargetBlank": true
+    }
+  },{
+    "postImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://cdn.pixabay.com/photo/2020/09/22/13/32/silhouette-5593108_960_720.jpg"
+    },
+    "postTitle": [{
+      "type": "heading1",
+      "text": "And this post",
+      "spans": []
+    }],
+    "postCopy": [{
+      "type": "heading1",
+      "text": "Check it out",
+      "spans": []
+    }],
+    "postLink": {
+      "label": "",
+      "id": "postLink",
+      "placeholder": "",
+      "allowTargetBlank": true
+    }
+  },{
+    "postImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.pexels.com/photos/1196514/pexels-photo-1196514.jpeg?cs=srgb&dl=pexels-mohamed-nabil-1196514.jpg&fm=jpg"
+    },
+    "postTitle": [{
+      "type": "heading1",
+      "text": "And most importantly, this one too.",
+      "spans": []
+    }],
+    "postCopy": [{
+      "type": "heading1",
+      "text": "Check it out",
+      "spans": []
+    }],
+    "postLink": {
+      "label": "",
+      "id": "postLink",
+      "placeholder": "",
+      "allowTargetBlank": true
+    }
+  }],
+  "slice_type": "post_list"
+}]

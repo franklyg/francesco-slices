@@ -3,40 +3,43 @@ import { array, shape } from 'prop-types';
 import { RichText } from 'prismic-reactjs';
 import styled from 'styled-components';
 import GlobalStyle from '../../styles/global';
-import { Container } from '../../styles/theme';
+import { Container, Shadows, FontSizing } from '../../styles/theme';
 
 const FAQParent = styled.section`
   display: flex;
   flex-flow: column;
   min-height: 100%;
-  padding: 2rem 0;
+  padding: 4rem 0;
+  background: ${props => props.faqBackground};
+`;
+const FAQHeadingParent = styled.header`
+  text-align: center;
+`;
+const FAQHeader = styled.div`
+  color: ${props => props.faqHeaderTextColor};
+  font-size: ${FontSizing.headingMedium};
+  line-height: 1;
+  margin: 0 0 2rem;
+`;
+const FAQSubText = styled.div`
+  color: ${props => props.faqSubHeaderTextColor};
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0 0 2rem;
 `;
 const FAQItem = styled.div`
-  box-shadow: 0 5px 10px 2px rgba(0,0,0,.07), 0 0px 5px 0px rgba(0,0,0,.1);
+  background: ${ props => props.headerBackground };
+  color: ${ props => props.headerColor };
+  box-shadow: ${Shadows.standardShadow};
+  font-size: ${ FontSizing.medium };
   margin: 0 0 3px;
-  padding: 2rem 1rem;
-  font-size: 1.25rem;
+  padding: 1.35rem 1rem;
   line-height: 1;
   cursor: pointer;
   border-radius: 5px;
   position: relative;
   z-index: 1;
   transform: translateY(.5rem);
-  background: ${ props => props.headerBackground };
-  color: ${ props => props.headerColor };
-`;
-const FAQHeadingParent = styled.header`
-  text-align: center;
-`;
-const FAQHeader = styled.div`
-  font-size: 4rem;
-  line-height: 1;
-  margin: 0 0 2rem;
-`;
-const FAQSubText = styled.div`
-  font-size: 2rem;
-  line-height: 1;
-  margin: 0 0 2rem;
 `;
 const FAQCopy = styled.div`
   ${ props => {
@@ -55,11 +58,13 @@ const FAQCopy = styled.div`
       }
     }
   }
-  border-radius: 0 0 5px 5px;
-  font-size: 1rem;
-  line-height: 1;
   background: ${ props => props.copyBackground };
   color: ${ props => props.copyColor };
+  border-radius: 0 0 5px 5px;
+  font-size: ${FontSizing.medium};
+  line-height: 1;
+  position: relative;
+  z-index: 0;
 `;
 
 const FAQSlice = ({ slice }) => {
@@ -69,16 +74,17 @@ const FAQSlice = ({ slice }) => {
   return (
     <>
       <GlobalStyle />
-      <FAQParent>
+      <FAQParent faqBackground={slice.primary.faqBackground}>
         <Container>
           <FAQHeadingParent>
-            <FAQHeader>
+            <FAQHeader faqHeaderTextColor={ slice.primary.faqHeaderTextColor }>
               <RichText render={ slice.primary.title }/>
             </FAQHeader>
-            <FAQSubText>
+            <FAQSubText faqSubHeaderTextColor={ slice.primary.faqSubHeaderTextColor }>
               <RichText render={ slice.primary.description }/>
             </FAQSubText>
           </FAQHeadingParent>
+
           {
             slice.items.map((post, i) => 
             <div key={i}>
@@ -103,6 +109,7 @@ const FAQSlice = ({ slice }) => {
             </div>
             )
           }
+
         </Container>
       </FAQParent>
     </>

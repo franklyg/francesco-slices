@@ -12,18 +12,55 @@
       "description": "TheNavigation",
       "primary": {
         "navigationDirection": {
+          "type": "Boolean",
           "config": {
-            "label": "Navigation Animation Direction",
+            "label": "",
+            "id": "navigationDirection",
             "placeholder": "",
-            "default_value": "left",
-            "options": [
-              "left",
-              "top",
-              "right",
-              "bottom"
-            ]
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
+          }
+        },
+        "menuIconPosition": {
+          "type": "Boolean",
+          "config": {
+            "label": "",
+            "id": "menuIconPosition",
+            "placeholder": "",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
+          }
+        },
+        "horizontalLinksPosition": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
           },
-          "type": "Select"
+          "type": "Boolean"
+        },
+        "verticalLinksPosition": {
+          "type": "Boolean",
+          "config": {
+            "label": "",
+            "id": "verticalLinksPosition",
+            "placeholder": "",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
+          }
+        },
+        "menuIconColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "menuIconColor",
+            "placeholder": ""
+          }
         },
         "navigationBackgroundColor": {
           "type": "Color",
@@ -40,13 +77,6 @@
             "id": "navigationTextColor",
             "placeholder": ""
           }
-        },
-        "menuIconColor": {
-          "config": {
-            "label": "",
-            "placeholder": ""
-          },
-          "type": "Color"
         }
       },
       "items": {
@@ -65,6 +95,14 @@
             "id": "navigationLink",
             "placeholder": "",
             "allowTargetBlank": true
+          }
+        },
+        "navigationTextColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "navigationTextColor",
+            "placeholder": ""
           }
         }
       }

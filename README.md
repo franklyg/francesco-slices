@@ -50,8 +50,8 @@ Text Color
 ## TheNavigation - A navigation to use on your site.
 ### Editable Options 👷‍♂️
 ```
-Placement of hamburger menu (left, center, right)
-Vertical alignment of text (top, middle, bottom)
+Placement of hamburger menu (left, right)
+Vertical alignment of text (top, bottom)
 Horizontal alignment of text (left, right)
 Hamburger Color
 Background Color

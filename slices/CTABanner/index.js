@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes, { array, shape } from 'prop-types';
 import styled from 'styled-components';
 import GlobalStyle from '../../styles/global';
-import { Container } from '../../styles/theme';
+import { Container, Shadows, FontSizing } from '../../styles/theme';
 
 const BannerParent = styled.section`
+  background: ${props => props.bannerBackgroundColor};
   width: 100%;
-  padding: 3rem 0;
-  background: ${props => props.bannerBackgroundColor}
+  padding: 1.5rem 0;
 `;
 const BannerParentChild = styled.div`
   display: flex;
@@ -16,36 +16,35 @@ const BannerParentChild = styled.div`
   align-items: center;
 `;
 const BannerHeader = styled.h3`
-  font-size: 3.25rem;
+  font-size: ${ FontSizing.headingMedium };
   font-weight: 600;
   line-height: 1;
   margin: 0 0 1rem;
   text-align: center; 
 `;
 const BannerSubText = styled.p`
-  font-size: 2rem;
+  font-size: ${ FontSizing.subHeadingMedium };
   font-weight: 200;
   line-height: 1;
   margin: 0 0 1rem;
 `;
 const BannerButton = styled.a`
+  box-shadow: ${Shadows.standardShadow};
+  font-size: ${FontSizing.medium};
+  font-weight: 600;
   text-decoration: none;
   display: table;
-  font-size: 1.5rem;
-  font-weight: 600;
   text-align: center;
-  margin: 1.5rem 0 0;
+  margin: 1rem 0 0;
   padding: 1.5rem 3rem;
   border-radius: 100px;
-  box-shadow: 0 5px 10px 2px rgba(0,0,0,.07), 0 0px 5px 0px rgba(0,0,0,.1);
 `;
 
-const CTABanner = ({ slice, titleBackgroundColor }) => {
-
+const CTABanner = ({ slice }) => {
   return(
     <>
       <GlobalStyle />
-      <BannerParent bannerBackgroundColor={ slice.primary.bannerBackgroundColor || titleBackgroundColor } >
+      <BannerParent bannerBackgroundColor={ slice.primary.bannerBackgroundColor } >
         <Container>
           <BannerParentChild>
             <BannerHeader>

@@ -3,14 +3,13 @@ import { array, shape } from 'prop-types';
 import { RichText } from 'prismic-reactjs';
 import styled from 'styled-components';
 import GlobalStyle from '../../styles/global';
-import { Container } from '../../styles/theme';
+import { Container, Shadows, FontSizing } from '../../styles/theme';
 
 const PostCardsParent = styled.section`
-  padding: 2rem;
+  padding: 4rem 0;
+  background: ${props => props.postListBackground};
 `;
 const PostCardsInner = styled.div`
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-  font-family: 'Poppins', Arial; 
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 1.75rem;
@@ -24,17 +23,18 @@ const PostCardsInner = styled.div`
 `;
 const PostListTitle = styled.div`
   margin: 0 0 2rem;
-  font-size: 3.25rem;
+  font-size: ${FontSizing.headingLarge};
+  color: ${props => props.postListHeaderTextColor};
   line-height: 1;
   text-align: center;
   text-transform: capitalize;
 `;
 const PostListSubTitle = styled.div`
-  margin: 0 0 2rem;
-  font-size: 2.25rem;
+  margin: 0 0 4rem;
+  font-size: ${FontSizing.headingSmall};
+  color: ${props => props.postListSubHeaderTextColor};
   line-height: 1;
   text-align: center;
-  text-transform: capitalize;
 `;
 const PostCard = styled.a`
   box-shadow: 0 5px 10px 2px rgba(0,0,0,.07), 0 0px 5px 0px rgba(0,0,0,.1);
@@ -86,10 +86,8 @@ const PostCardCopy = styled.div`
   padding: 0 1rem;
   display: flex;
   position: absolute;
-  width: calc(100% - 2rem);
   bottom: -50%;
   transition: all .5s cubic-bezier(0,1.02,1,1);
-  transition-delay: .5s;
   font-size: .75rem;
   color: white;
   text-shadow: 0 1px 2px rgba(0,0,0,.25);
@@ -101,12 +99,12 @@ const PostCardCopy = styled.div`
 const PostList = ({ slice }) => (
   <>
     <GlobalStyle />
-    <PostCardsParent>
+    <PostCardsParent postListBackground={ slice.primary.postListBackground }>
       <Container>
-        <PostListTitle>
+        <PostListTitle postListHeaderTextColor={ slice.primary.postListHeaderTextColor }>
           <RichText render={slice.primary.title}/>
         </PostListTitle>
-        <PostListSubTitle>
+        <PostListSubTitle postListSubHeaderTextColor={ slice.primary.postListSubHeaderTextColor }>
           <RichText render={slice.primary.description}/>
         </PostListSubTitle>
         <PostCardsInner>

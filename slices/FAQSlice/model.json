@@ -27,11 +27,27 @@
             "placeholder": "A nice description of your feature"
           }
         },
-        "faqTitleBackground": {
+        "faqHeaderTextColor": {
           "type": "Color",
           "config": {
             "label": "",
-            "id": "faqTitleBackground",
+            "id": "faqHeaderTextColor",
+            "placeholder": ""
+          }
+        },
+        "faqSubHeaderTextColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "faqSubHeaderTextColor",
+            "placeholder": ""
+          }
+        },
+        "faqBackground": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "faqBackground",
             "placeholder": ""
           }
         },
@@ -42,6 +58,13 @@
             "id": "faqTitleTextColor",
             "placeholder": ""
           }
+        },
+        "faqTitleBackground": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Color"
         },
         "faqCopyBackground": {
           "type": "Color",

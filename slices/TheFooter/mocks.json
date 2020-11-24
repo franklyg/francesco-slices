@@ -1,1 +1,46 @@
-[{"id":"default-slice","name":"Default slice","docURL":"...","version":"sktwi1xtmkfgx8626","description":"TheFooter","primary":{"brandName":"A text of type \"\" that conveys ","footerBackground":"#f0d92d","footerTextColor":"#688e1b"},"items":[{"footerLink":{"label":"","id":"footerLink","placeholder":"","allowTargetBlank":true},"footerLinkCopy":"A text of type \"\" that conveys "},{"footerLink":{"label":"","id":"footerLink","placeholder":"","allowTargetBlank":true},"footerLinkCopy":"A text of type \"\" that conveys "}],"slice_type":"the_footer"}]
+[{
+  "id": "default-slice",
+  "name": "Default slice",
+  "docURL": "...",
+  "version": "sktwi1xtmkfgx8626",
+  "description": "TheFooter",
+  "primary": {
+    "brandName": "Fuego",
+    "footerBackground": "#f0d92d",
+    "footerTextColor": "#688e1b"
+  },
+  "items": [{
+    "footerLink": {
+      "label": "",
+      "id": "footerLink",
+      "placeholder": "",
+      "allowTargetBlank": true
+    },
+    "footerLinkCopy": "About"
+  }, {
+    "footerLink": {
+      "label": "",
+      "id": "footerLink",
+      "placeholder": "",
+      "allowTargetBlank": true
+    },
+    "footerLinkCopy": "Learn More"
+  },{
+    "footerLink": {
+      "label": "",
+      "id": "footerLink",
+      "placeholder": "",
+      "allowTargetBlank": true
+    },
+    "footerLinkCopy": "Portfolio"
+  },{
+    "footerLink": {
+      "label": "",
+      "id": "footerLink",
+      "placeholder": "",
+      "allowTargetBlank": true
+    },
+    "footerLinkCopy": "Merch"
+  }],
+  "slice_type": "the_footer"
+}]

@@ -3,10 +3,10 @@ import { array, shape } from 'prop-types';
 import { RichText, Link } from 'prismic-reactjs';
 import styled from 'styled-components'
 import GlobalStyle from '../../styles/global';
-import { Container } from '../../styles/theme';
+import { Container, FontSizing, Shadows } from '../../styles/theme';
 
 const TourDatesParent = styled.section`
-  padding: 2rem 0;
+  padding: 4rem 0;
   background: ${props => props.tourDatesBackground};
 `;
 const TourDatesTitle = styled.div`
@@ -43,17 +43,29 @@ const TourDatesItem = styled.div`
 `;
 const TourDatesDate = styled.div`
   margin: .5rem 0;
+  @media(min-width: 736px){
+    margin: .15rem 0;
+  }
 `;
 const TourDatesLocation = styled.div`
-  margin: .5rem 0;  
+  margin: .5rem 0;
+  @media(min-width: 736px){
+    margin: .15rem 0;
+  }  
 `;
 const TourDatesTime = styled.div`
   margin: .5rem 0;
+  @media(min-width: 736px){
+    margin: .15rem 0;
+  }
 `;
 const TourDatesCTALinkParent = styled.div`
   display: flex;
   justify-content: flex-end;
   margin: .5rem 0;
+  @media(min-width: 736px){
+    margin: .15rem 0;
+  }
 `;
 const CTALink = styled.a`
   background: ${props => props.tourDatesCTABackground};

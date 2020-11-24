@@ -1,1 +1,41 @@
-[{"id":"default-slice","name":"Default slice","docURL":"...","version":"sktwi1xtmkfgx8626","description":"PageHero","primary":{"title":[{"type":"heading1","text":"whiteboard synergistic users","spans":[]}],"headerTextColor":"#d10a5b","description":[{"type":"paragraph","text":"reintermediate turn-key bandwidth","spans":[]}],"subHeaderTextColor":"#f0bee8","backgroundImage":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1516757936754-d2ed473f712d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"},"ctaCopy":"A text of type \"CTA Copy\" that conveys ","ctaLink":{"link_type":"Web","url":"https://slicemachine.dev"},"buttonBackground":"#11d1a2","buttonTextColor":"#631cbb","ctaSwitch":true,"parallaxSwitch":true},"items":[],"slice_type":"page_hero"}]
+[{
+  "id": "default-slice",
+  "name": "Default slice",
+  "docURL": "...",
+  "version": "sktwi1xtmkfgx8626",
+  "description": "PageHero",
+  "primary": {
+    "title": [{
+      "type": "heading1",
+      "text": "Knowledge is Power!",
+      "spans": []
+    }],
+    "headerTextColor": "#fff",
+    "description": [{
+      "type": "paragraph",
+      "text": "Want to learn more?",
+      "spans": []
+    }],
+    "subHeaderTextColor": "#003456",
+    "backgroundImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1516757936754-d2ed473f712d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+    },
+    "ctaCopy": "Learn More",
+    "ctaLink": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    },
+    "buttonBackground": "#fff",
+    "buttonTextColor": "#000",
+    "ctaSwitch": true,
+    "parallaxSwitch": true
+  },
+  "items": [],
+  "slice_type": "page_hero"
+}]
