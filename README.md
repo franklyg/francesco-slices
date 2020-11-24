@@ -1,8 +1,8 @@
 # Avalina Slices
-Avalina is a theme submitted for the Prismic Slices Contest. Built on NextJS and Styled Components. 
+Avalina is a theme submitted for the Prismic Slices Contest. Built on NextJS and Styled Components. Deployed on Vercel
 
 # Slices
-
+## Link to the project: [👀 The site ](https://francesco-slices.vercel.app/)
 ## CTABanner - A promotional banner that can be displayed on your page.
 ### Editable Options 👷‍♂️
 ```
@@ -67,6 +67,8 @@ Tour Date Item Text Color
 Button Background Color
 Button Text Color
 ```
+
+Thank you to the Prismic Team for organizing this event, and for the challenge. Looking forward to the future of Slices, and what's to come!
 
 
 
