@@ -1,3 +1,75 @@
+# Avalina Slices
+Avalina is a theme submitted for the Prismic Slices Contest. Built on NextJS and Styled Components. 
+
+# Slices
+
+## CTABanner - A promotional banner that can be displayed on your page.
+### Editable Options 👷‍♂️
+```
+Background Color
+Text Color
+Button Background Color
+Button Text Color
+```
+## FAQSlice - Dropdown for FAQ question.
+### Editable Options 👷‍♂️
+```
+Background Color
+```
+## PageHero - Main fold section.
+### Editable Options 👷‍♂️
+```
+Parallax Toggle
+CTA Show/Hide Toggle
+Background Image
+Text Colors
+Button Background Color
+Button Text Color
+```
+## PostList - An array of posts to display on your site.
+### Editable Options 👷‍♂️
+```
+Background Image
+Section Background Color
+```
+## TextImage - A section to display text and an image.
+### Editable Options 👷‍♂️
+```
+Background Image
+Background Color
+Text Color
+Button Background Color
+Button Text Color
+```
+## TheFooter - A footer slice to place on your site.
+### Editable Options 👷‍♂️
+```
+Background Color
+Text Color
+```
+## TheNavigation - A navigation to use on your site.
+### Editable Options 👷‍♂️
+```
+Placement of hamburger menu (left, center, right)
+Vertical alignment of text (top, middle, bottom)
+Horizontal alignment of text (left, right)
+Hamburger Color
+Background Color
+Text Color
+```
+## TourDates - A slice for adding dates of upcoming events.
+### Editable Options 👷‍♂️
+```
+Background Color
+Text Color
+Tour Date Item Background Color
+Tour Date Item Text Color
+Button Background Color
+Button Text Color
+```
+
+
+
 # Slice Library Next.js Starter
 
 > Looking for the Vue.js counterpart? [Check out the Nuxt.js starter](https://github.com/prismicio-community/slice-library-starter-nuxt#readme).
